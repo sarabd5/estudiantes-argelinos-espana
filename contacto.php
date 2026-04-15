@@ -1,38 +1,26 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Contacto</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<?php
+$titulo = "Contacto";
+include 'header.php';
+?>
 
-<body>
-
-<header>
-    <h1>Contacto</h1>
-</header>
-
-<nav>
-    <a href="index.php">Inicio</a>
-    <a href="estudios.php">Estudios</a>
-    <a href="tramites.php">Trámites</a>
-    <a href="contacto.php">Contacto</a>
-</nav>
-
-<div class="container">
-
-    <h2>Envíanos un mensaje</h2>
-
-    <form method="POST">
-        <input type="text" name="nombre" placeholder="Nombre"><br><br>
-        <input type="email" name="email" placeholder="Email"><br><br>
-        <textarea name="mensaje" placeholder="Mensaje"></textarea><br><br>
-        <button type="submit">Enviar</button>
+<section class="contenido">
+    <h2>📞 ¿Necesitas ayuda personalizada?</h2>
+    <form action="enviar.php" method="POST" class="form-contacto">
+        <label>Nombre completo:</label>
+        <input type="text" name="nombre" required>
+        
+        <label>Correo electrónico:</label>
+        <input type="email" name="email" required>
+        
+        <label>WhatsApp (con código de Argelia +213):</label>
+        <input type="tel" name="whatsapp" required>
+        
+        <label>Mensaje:</label>
+        <textarea name="mensaje" rows="5" required></textarea>
+        
+        <button type="submit" class="btn">Enviar consulta</button>
     </form>
+    <p>También puedes escribirnos a: <strong>info@estudiantes-argelinos-valencia.com</strong></p>
+</section>
 
-</div>
-
-<footer>© 2026</footer>
-
-</body>
-</html>
+<?php include 'footer.php'; ?>
