@@ -1,33 +1,34 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Inicio</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<?php
+// Página principal - Estudiantes Argelinos en España
+$titulo = "Inicio - Estudiantes Argelinos en España";
+include 'header.php';
+?>
 
-<body>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Bienvenido, estudiante argelino 🇩🇿</h1>
+        <p>Tu guía completa para estudiar en <span class="destacado">Valencia, España</span></p>
+        <a href="tramites.php" class="btn">Comenzar ahora</a>
+    </div>
+</section>
 
-<header>
-    <h1>Estudiar en España 🇪🇸</h1>
-    <p>Guía para estudiantes argelinos</p>
-</header>
+<section class="features">
+    <div class="card">
+        <h3>📘 Entender los pasos</h3>
+        <p>Desde la homologación hasta la matrícula.</p>
+    </div>
+    <div class="card">
+        <h3>🎓 Encontrar estudios</h3>
+        <p>Grados, másteres y formación profesional.</p>
+    </div>
+    <div class="card">
+        <h3>📋 Trámites administrativos</h3>
+        <p>Visa, NIE, empadronamiento y más.</p>
+    </div>
+    <div class="card">
+        <h3>📞 Contacto fácil</h3>
+        <p>Asesoría personalizada.</p>
+    </div>
+</section>
 
-<nav>
-    <a href="index.php">Inicio</a>
-    <a href="estudios.php">Estudios</a>
-    <a href="tramites.php">Trámites</a>
-    <a href="contacto.php">Contacto</a>
-</nav>
-
-<div class="container">
-    <h2>Bienvenido</h2>
-    <p>Te ayudamos a venir a España para estudiar.</p>
-</div>
-
-<footer>
-    © 2026 - Proyecto estudiantes
-</footer>
-
-</body>
-</html>
+<?php include 'footer.php'; ?>
