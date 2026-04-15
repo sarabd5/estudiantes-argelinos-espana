@@ -1,34 +1,17 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Estudios</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<?php
+$titulo = "Opciones de Estudio en Valencia";
+include 'header.php';
+?>
 
-<body>
-
-<header>
-    <h1>Estudios en España</h1>
-</header>
-
-<nav>
-    <a href="index.php">Inicio</a>
-    <a href="estudios.php">Estudios</a>
-    <a href="tramites.php">Trámites</a>
-    <a href="contacto.php">Contacto</a>
-</nav>
-
-<div class="container">
-    <h2>Opciones de estudio</h2>
+<section class="contenido">
+    <h2>🎓 ¿Qué puedes estudiar en Valencia?</h2>
     <ul>
-        <li>Universidades públicas</li>
-        <li>Másteres</li>
-        <li>Becas</li>
+        <li><strong>Grados universitarios</strong> - Universitat de València, UPV, CEU Cardenal Herrera</li>
+        <li><strong>Másteres oficiales</strong> - Requisitos y homologación</li>
+        <li><strong>Ciclos Formativos de Grado Superior</strong> - FP Dual muy demandada</li>
+        <li><strong>Cursos de idiomas</strong> - Español y valenciano</li>
     </ul>
-</div>
+    <p>Consulta la <a href="https://www.uv.es/" target="_blank">Universitat de València</a> o la <a href="https://www.upv.es/" target="_blank">UPV</a>.</p>
+</section>
 
-<footer>© 2026</footer>
-
-</body>
-</html>
+<?php include 'footer.php'; ?>
