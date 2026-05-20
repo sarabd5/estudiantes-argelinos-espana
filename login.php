@@ -24,17 +24,3 @@ header("Location: dashboard.php");
 }
 
 ?>
-
-<form method="POST">
-
-<input type="email"
-name="email">
-
-<input type="password"
-name="password">
-
-<button name="login">
-Login
-</button>
-
-</form>
