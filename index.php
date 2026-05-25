@@ -31,4 +31,12 @@ include 'header.php';
     </div>
 </section>
 
+<div class="card" style="margin: 40px;">
+    <h2>Información desde la API</h2>
+
+    <?php
+        include 'api/paises.php';
+    ?>
+</div>
+
 <?php include 'footer.php'; ?>
